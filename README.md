@@ -26,3 +26,6 @@
     hyperParameters.py
     
 
+# Description
+This project uses the K-Nearest-Neighbors(KNN) algorithm to classify the iris dataset
+As well as using K-Fold Cross Validation to validate the results
