@@ -1,0 +1,13 @@
+# plot the samples
+fig = plt.figure()
+plt.plot(data1[:, 0], data1[:, 1], 'b.', label='given class a')
+plt.plot(data2[:, 0], data2[:, 1], 'r.', label='given class b')
+plt.plot(predicted1_samples[:, 0], predicted1_samples[:, 1], 'g*', label='predicted class a')
+plt.plot(predicted2_samples[:, 0], predicted2_samples[:, 1], '*', color='orange', label='predicated class b')
+plt.xlabel('X-axis')
+plt.ylabel('Y-Axis')
+plt.title(fig_title)
+plt.tight_layout()
+plt.grid(True, lw=0.5)
+plt.legend()
+fig.savefig(fig_output)
